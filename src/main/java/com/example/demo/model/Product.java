@@ -15,7 +15,7 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     
-    @NotBlank(message = "Tên sản phẩm không được để  !")
+    @NotBlank(message = "Tên sản phẩm không được !")
     @Size(min = 2, max = 100, message = "Tên sản phẩm phải có từ 2 đến 100 ký tự.")
     @Column(name = "name", nullable = false)
     private String name;
